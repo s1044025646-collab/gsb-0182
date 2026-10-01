@@ -1,0 +1,8 @@
+node_modules/
+dist/
+data/
+data-demo/
+data-cli/
+data-api/
+*.csv
+!**/examples/*.csv
