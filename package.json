@@ -1,0 +1,24 @@
+{
+  "name": "a",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node --experimental-sqlite dist/server.js",
+    "dev": "node --experimental-sqlite --import tsx src/server.ts",
+    "test": "node --experimental-sqlite --import tsx --test src/tests/*.test.ts",
+    "demo": "node --experimental-sqlite --import tsx src/demo.ts",
+    "calibrate": "tsx src/calibrate.ts",
+    "trend": "tsx src/trend.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^24.19.0",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
